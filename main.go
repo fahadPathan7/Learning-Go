@@ -2,3 +2,7 @@ package main // package declaration. main is a special package name which tells 
 
 import "fmt" // import declaration. fmt is a standard library package which contains functions for printing formatted output and scanning input from the console.
 
+func main() {
+	fmt.Println("Hello, World!")
+	fmt.Print("I am learning go")
+}
