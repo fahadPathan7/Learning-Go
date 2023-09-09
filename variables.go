@@ -16,7 +16,7 @@ func main() {
 	var name string = "John Doe"
 	var age int = 25
 	var isCool bool = true
-	var size float32 = 2.3
+	const size float32 = 2.3
 
 	// Alternative
 	// var name = "John Doe" // type is inferred
@@ -25,10 +25,12 @@ func main() {
 	// var size = 2.3 // type is inferred
 
 	// Shorthand
+	// these can only be used inside a function. not globally.
 	// name := "John Doe"
 	// age := 25
 	// isCool := true
 	// size := 2.3
 
-	fmt.Println(name, age, isCool, size)
+	// another way to print
+	fmt.Printf("Name: %v\nAge: %v\nIsCool: %v\nSize: %v\n", name, age, isCool, size)
 }
