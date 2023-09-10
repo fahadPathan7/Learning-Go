@@ -33,4 +33,26 @@ func main() {
 
 	// another way to print
 	fmt.Printf("Name: %v\nAge: %v\nIsCool: %v\nSize: %v\n", name, age, isCool, size)
+
+
+	// multiple variables declaration
+	var a, b int = 1, 2
+	fmt.Println(a, b)
+
+	// multiple variables declaration shorthand
+	c, d := 3, 4
+	fmt.Println(c, d)
+
+	// multiple variables declaration with different types
+	var e, f, g = 5, 6, "seven"
+	fmt.Println(e, f, g)
+
+	// multiple variables declaration within a block
+	var (
+		h = 8
+		i = 9
+		j = "ten"
+	)
+	fmt.Println(h, i, j)
+
 }
