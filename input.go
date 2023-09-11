@@ -9,7 +9,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main3() {
 	var name string
 	var age int
 
