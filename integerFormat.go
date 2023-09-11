@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main4() {
 	var decimalNumber int
 
 	fmt.Print("Enter a decimal number: ")
