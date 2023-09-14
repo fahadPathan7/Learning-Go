@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main11() {
 	var a int = 10;
 	var p *int = &a; // p is a pointer to an integer variable
 	fmt.Printf("a = %d\n", a) // value of a
