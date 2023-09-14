@@ -12,14 +12,14 @@ func getSum(a int, b int) int {
 	return a + b
 }
 
-func main() {
+func main10() {
 	var country string
 	fmt.Print("Enter country: ")
 	fmt.Scan(&country)
 
 	printCountry(country)
 
-	
+
 	var a, b int
 	fmt.Print("Enter a: ")
 	fmt.Scan(&a)
