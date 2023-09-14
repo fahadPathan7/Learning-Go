@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main14() {
 	// create an array of 3 integers
 	var arr[3] int
 
@@ -13,7 +13,7 @@ func main() {
 
 	fmt.Println(arr) // [1 2 3]
 
-	
+
 	// another way to declare array
 	arr2 := [3] int {1, 2, 3}
 	fmt.Println(arr2)
