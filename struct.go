@@ -21,7 +21,7 @@ func (p *Person) increaseAge(increament int) {
 	p.age += increament
 }
 
-func main() {
+func main13() {
 	// creating a struct object
 	fahad := Person{"Fahad", 23, 1}
 
