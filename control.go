@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main7() {
 	// If statement
 	var a, b int = 10, 20
 
