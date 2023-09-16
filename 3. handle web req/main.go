@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"net/url"
 	"strings"
 )
 
@@ -59,7 +60,35 @@ func performPostRequest() {
 	fmt.Println(string(content))
 }
 
+// PostForm is a shortcut for Post with the Content-Type set to application/x-www-form-urlencoded.
+// postform is used to send form data to the server. It is used to send data from client to server.
+// difference between post and postform is that postform is used to send form data to the server. where as post is used to send json data to the server.
+func performPostFormRequest() {
+	const myUrl = "http://localhost:8000/postform"
+
+	data := url.Values{}
+	data.Add("name", "John Doe")
+	data.Add("occupation", "gardener")
+	data.Add("email", "fahadpathan56@gmail.com")
+
+	response, err := http.PostForm(myUrl, data)
+
+	if err != nil {
+		fmt.Println("Error performing POST request:", err)
+		panic(err)
+	}
+
+	defer response.Body.Close()
+
+	// ioutil.ReadAll reads the response body into a byte slice. We can then convert it to a string.
+	content, _ := ioutil.ReadAll(response.Body)
+
+	// printing after converting byte slice to string
+	fmt.Println(string(content))
+}
+
 func main() {
-	performGetRequest()
-	performPostRequest()
+	//performGetRequest()
+	//performPostRequest()
+	performPostFormRequest()
 }
