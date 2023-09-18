@@ -6,4 +6,5 @@ use (
 	"./7. goroutines"
 	"./Basic go"
 	"./go mod"
+	"./8. mutex and await groups"
 )
