@@ -3,6 +3,7 @@ go 1.21.1
 use (
 	"./5. api creation"
 	"./6. mongo api"
+	"./7. goroutines"
 	"./Basic go"
 	"./go mod"
 )
