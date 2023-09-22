@@ -24,6 +24,7 @@ const colName = "watchlist" // collection name
 var collection *mongo.Collection // collection object/instance. by using this variable we can perform CRUD operations on "watchlist" collection
 
 // connect with mongodb
+// this is a special function. it will be called before the main function by Go runtime. it will be used to connect with mongodb. it will also create collection instance. we will use this collection instance to perform CRUD operations on "watchlist" collection.
 func init() {
 	clientOptions := options.Client().ApplyURI(connectionString) // clientOptions is used to set options for client. it is needed to connect with mongodb.
 	client, err := mongo.Connect(context.TODO(), clientOptions) // connect with mongodb. it returns client and error. context.TODO() will be used in place of context.Background(). It is used to avoid memory leaks.
