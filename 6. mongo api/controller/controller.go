@@ -13,6 +13,9 @@ import (
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
+
+	//"go.mongodb.org/mongo-driver/mongo/options"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 // mongodb connection string. it will be used to connect with mongodb
@@ -38,6 +41,15 @@ func init() {
 	collection = client.Database(dbName).Collection(colName) // create collection instance. it returns collection. we will use this collection instance to perform CRUD operations on "watchlist" collection.
 
 	fmt.Println("Collection instance created!")
+
+	// db, err := sql.Open("mysql", "fahadftms:fahadftms@tcp(localhost:3306)/ftms")
+	// if err != nil {
+	// 	panic(err.Error())
+	// }
+
+	// defer db.Close()
+
+	// fmt.Println("Connected to MySQL database")
 }
 
 // insert a record in mongodb
