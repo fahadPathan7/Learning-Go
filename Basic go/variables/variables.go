@@ -12,7 +12,7 @@ go has 4 types of variables:
 Variables are declared using the var keyword followed by the variable name and type.
 */
 
-func main2() {
+func main() {
 	var name string = "John Doe"
 	var age int = 25
 	var isCool bool = true
