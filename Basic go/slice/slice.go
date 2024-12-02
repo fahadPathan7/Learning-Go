@@ -19,4 +19,12 @@ func main() {
 
 	fmt.Println("Number of students: ", len(names))
 	fmt.Println(names)
+
+	slice := []int{1, 2, 3, 4, 5}
+	modifySlice(slice)
+	fmt.Println(slice)
+}
+
+func modifySlice(slice []int) {
+	slice[0] = 100
 }
