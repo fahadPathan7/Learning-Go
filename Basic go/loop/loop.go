@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main9() {
+func main() {
 	// type 1
 	var i int = 0
 	for i < 10 {
