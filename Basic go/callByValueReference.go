@@ -10,7 +10,7 @@ func callByReference(a *int) {
 	*a = 20
 }
 
-func main12() {
+func main() {
 	// call by value
 	var a int = 10;
 	fmt.Println("Before calling cbv, a = ", a)
