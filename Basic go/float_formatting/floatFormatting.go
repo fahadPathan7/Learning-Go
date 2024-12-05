@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main5() {
+func main() {
 	var pi float32 = 3.1416
 	fmt.Printf("pi = %f\n", pi) // 3.141600
 
