@@ -1,6 +1,9 @@
 # <div align='center'>Float Formatting</div>
 
 ## Index
+- [Float Formatting](#float-formatting)
+  - [Index](#index)
+  - [Float formatting](#float-formatting-1)
 
 <br><br>
 
