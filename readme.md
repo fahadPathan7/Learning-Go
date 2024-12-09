@@ -23,6 +23,7 @@ Go is a statically typed, compiled language. It was developed by Google in 2007.
 - [Input](Basic%20go/input/)
 - [Array](Basic%20go/array/)
 - [Slice](Basic%20go/slice/)
+- [Map](Basic%20go/map/)
 - [Condition](Basic%20go/condition/)
 - [Switch](Basic%20go/switch/)
 - [Loop](Basic%20go/loop/)
