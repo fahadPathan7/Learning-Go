@@ -1,6 +1,20 @@
 # <div align='center'>Function</div>
 
 ## Index
+- [Function](#function)
+  - [Index](#index)
+  - [Function creation and calling](#function-creation-and-calling)
+  - [Function with parameters](#function-with-parameters)
+  - [Function with return type](#function-with-return-type)
+  - [Function with named return values](#function-with-named-return-values)
+  - [Function with variadic parameters](#function-with-variadic-parameters)
+  - [Function with variadic parameters and normal parameters](#function-with-variadic-parameters-and-normal-parameters)
+  - [Function can be of struct type](#function-can-be-of-struct-type)
+  - [Function can be of interface type](#function-can-be-of-interface-type)
+  - [Anonymous function](#anonymous-function)
+    - [Anonymous function with parameters](#anonymous-function-with-parameters)
+    - [Anonymous function with return type](#anonymous-function-with-return-type)
+    - [Anonymous function assigning to a variable](#anonymous-function-assigning-to-a-variable)
 
 <br><br>
 
@@ -183,4 +197,50 @@ func main() {
 
 here, `printDetails` is a function of interface type `person`. We are creating a variable of interface type `person` and assigning a struct type `student` to it. Then we are calling the function `printDetails` using the interface variable.
 
-<hr>
+<br><br>
+
+## Anonymous function
+anonymous functions are the functions without a name.
+
+```go
+func main() {
+    func() {
+        fmt.Println("Hello")
+    }() // Function calling
+}
+```
+
+### Anonymous function with parameters
+
+```go
+func main() {
+    func(name string) {
+        fmt.Println("Hello", name)
+    }("Kamal") // Function calling
+}
+```
+
+### Anonymous function with return type
+
+```go
+func main() {
+    result := func(a int, b int) int {
+        return a + b
+    }(10, 20) // Function calling
+    fmt.Println(result) // 30
+}
+```
+
+### Anonymous function assigning to a variable
+
+```go
+func main() {
+    add := func(a int, b int) int {
+        return a + b
+    }
+    result := add(10, 20) // Function calling
+    fmt.Println(result) // 30
+}
+```
+
+---

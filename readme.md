@@ -11,6 +11,7 @@ This is my Golang tutorial. I will note down everything I learn about Golang her
   - [Topics Covered](#topics-covered)
     - [Basic Go](#basic-go)
     - [Concurrency Handling](#concurrency-handling)
+    - [Error Handling](#error-handling)
 
 ---
 
@@ -39,3 +40,8 @@ Go is a statically typed, compiled language. It was developed by Google in 2007.
 
 ### Concurrency Handling
 - [Go Concurrency](/go-concurrency/)
+
+### Error Handling
+- [Error Handling](/error-handling/)
+
+---
